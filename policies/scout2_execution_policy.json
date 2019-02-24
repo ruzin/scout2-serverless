@@ -1,0 +1,127 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ses:*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Action": [
+                "cloudformation:DescribeStacks",
+                "cloudformation:GetStackPolicy",
+                "cloudformation:ListStacks",
+                "cloudtrail:DescribeTrails",
+                "cloudtrail:GetTrailStatus",
+                "cloudwatch:DescribeAlarms",
+                "directconnect:*",
+                "ec2:DescribeCustomerGateways",
+                "ec2:DescribeFlowLogs",
+                "ec2:DescribeInstances",
+                "ec2:DescribeNetworkAcls",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSnapshotAttribute",
+                "ec2:DescribeSnapshots",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVolumes",
+                "ec2:DescribeVpcPeeringConnections",
+                "ec2:DescribeVpcs",
+                "ec2:DescribeVpnConnections",
+                "ec2:DescribeVpnGateways",
+                "efs:*",
+                "emr:*",
+                "elasticache:DescribeCacheClusters",
+                "elasticache:DescribeCacheSubnetGroups",
+                "elasticfilesystem:DescribeFileSystems",
+                "elasticfilesystem:DescribeMountTargetSecurityGroups",
+                "elasticfilesystem:DescribeMountTargets",
+                "elasticfilesystem:DescribeTags",
+                "elasticloadbalancing:DescribeListeners",
+                "elasticloadbalancing:DescribeLoadBalancerAttributes",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "elasticloadbalancing:DescribeSSLPolicies",
+                "elasticmapreduce:DescribeCluster",
+                "elasticmapreduce:ListClusters",
+                "iam:GenerateCredentialReport",
+                "iam:GetAccountPasswordPolicy",
+                "iam:GetCredentialReport",
+                "iam:GetGroup",
+                "iam:GetGroupPolicy",
+                "iam:GetLoginProfile",
+                "iam:GetPolicyVersion",
+                "iam:GetRolePolicy",
+                "iam:GetUserPolicy",
+                "iam:ListAccessKeys",
+                "iam:ListEntitiesForPolicy",
+                "iam:ListGroupPolicies",
+                "iam:ListGroups",
+                "iam:ListGroupsForUser",
+                "iam:ListInstanceProfilesForRole",
+                "iam:ListMFADevices",
+                "iam:ListPolicies",
+                "iam:ListRolePolicies",
+                "iam:ListRoles",
+                "iam:ListUserPolicies",
+                "iam:ListUsers",
+                "lambda:ListFunctions",
+                "rds:DescribeDBClusters",
+                "rds:DescribeDBInstances",
+                "rds:DescribeDBParameterGroups",
+                "rds:DescribeDBParameters",
+                "rds:DescribeDBSecurityGroups",
+                "rds:DescribeDBSnapshotAttributes",
+                "rds:DescribeDBSnapshots",
+                "rds:DescribeDBSubnetGroups",
+                "redshift:DescribeClusterParameterGroups",
+                "redshift:DescribeClusterParameters",
+                "redshift:DescribeClusterSecurityGroups",
+                "redshift:DescribeClusters",
+                "route53:List*",
+                "route53:Get*",
+                "route53domains:List*",
+                "route53domains:Get*",
+                "s3:*",
+                "ses:GetIdentityDkimAttributes",
+                "ses:GetIdentityPolicies",
+                "ses:ListIdentities",
+                "ses:ListIdentityPolicies",
+                "sns:List*",
+                "sns:Get*",
+                "sqs:GetQueueAttributes",
+                "sqs:ListQueues"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "cloudwatch:ListMetrics",
+                "cloudwatch:GetMetricStatistics",
+                "cloudwatch:Describe*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:Get*",
+                "iam:List*"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
