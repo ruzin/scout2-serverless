@@ -15,7 +15,7 @@ resource "aws_lambda_function" "scout2_basic_auth_lambda" {
   tags = {
     name = "scout2"
   }
-}
+}s
 
 data "archive_file" "scout2_basic_auth_lambda_package" {
   depends_on  = ["null_resource.render_lambda_auth"]
